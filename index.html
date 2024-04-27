@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userWords = prompt("");
+        let vowels = ['a','e','i','o','u'];
+        let final = {}
+
+        for(let vowel of vowels){
+            let count=0
+            for (let alpha of userWords){
+                if (alpha.toLowerCase() === vowel){
+                    count++;
+                }
+            }
+            final[vowel] = count;
+        }
+        console.log(final)
+    </script>
+</body>
+</html>
